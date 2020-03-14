@@ -1,3 +1,4 @@
+# Проект https://github.com/nikdom769/test_pyweb.git
 
 # список рейсов между двумя аэропортами
 air_trip = Flight.objects.all().filter(departure_airport__airport_code="AAQ", arrival_airport__airport_code="AAU")
