@@ -1,7 +1,8 @@
 
 # список рейсов между двумя аэропортами
 air_trip = Flight.objects.all().filter(departure_airport__airport_code="AAQ", arrival_airport__airport_code="AAU")
-
+for i in air_trip:
+    print(i)
 
 # список мест для выбранного самолета
 seats = Seat.objects.all().filter(aircraft_code__aircraft_code="AB3 ")
